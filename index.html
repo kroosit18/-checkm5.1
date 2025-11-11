@@ -71,9 +71,9 @@
 </head>
 <body>
   <center class="mb-4">
-    <img src="https://lh3.googleusercontent.com/d/1ZMI9FTcErAj1N8vh0viy3rAPnxZ7Zsky" class="mt-4" style="width:200px; height:auto; padding-bottom: 10px;">
-    <h2>Student Attendance Apps</h2>
-    <h5 class="text-center text-danger">สื่อ และนวัตกรรมครูสิทธิชาติ สิทธิ</h5>
+    <img src="https://lh3.googleusercontent.com/d/1U0H2HZ4zbtNChpYN5PbVkzWHNQuaso_0" class="mt-2" style="width:80px; height:auto; padding-bottom: 2px;">
+    <h3>ระบบเช็คชื่อแจ้งผู้ปกครอง ม.3/1</h3>
+    <h5 class="text-center text-danger">โรงเรียนเปรมติณสูลานนท์</h5>
   </center>
 
   <main class="container">
@@ -100,11 +100,11 @@
 
   <script>
     let attendanceRecords = [];
-    const studentListUrl = 'https://opensheet.elk.sh/1hrIyjHkYkQ5mL2IT1SVGmTKYh4oNT_sGD_xUIdm8Qk0/Name';
+    const studentListUrl = 'https://opensheet.elk.sh/1u4ndQZfRx2r_AVYQqRufJA5ZJaDjSJkmoQ9yYziEgt8/Name';
 
     window.onload = function() {
       // Initialize LIFF app with login required
-      liff.init({ liffId: '2008461036-GZQ5YdP7' })
+      liff.init({ liffId: '2008474175-wM4R5aoq' })
         .then(() => {
           if (!liff.isLoggedIn()) {
             liff.login();
@@ -212,7 +212,7 @@
     function saveToSheet(records) {
       $.LoadingOverlay("show");
 
-      const url = 'https://script.google.com/macros/s/AKfycbyUkdakuS3-XUUBMiz6jtTYmR_H0EjdT2zfKfSOSIMGKBzlroAVU1wrJ3C_e9meaLhMLw/exec'; // Replace with your web app URL
+      const url = 'https://script.google.com/macros/s/AKfycbxDNS2hS9x9tUC8hZtsZi4mLXVKQi5Ye9EvHwwzCvJm4Ze-CJWE3yoV6bpzKP0c5iBSWw/exec'; // Replace with your web app URL
 
       $.post(url, JSON.stringify(records), function(data) {
         $.LoadingOverlay("hide");
@@ -275,7 +275,7 @@
             contents: [
               {
                 type: 'text',
-                text: `สรุปการมาเรียน ม.5/13`,
+                text: `สรุปการมาเรียน ม.3/1`,
                 weight: 'bold',
                 size: 'xl',
                 color: '#1DB446',
